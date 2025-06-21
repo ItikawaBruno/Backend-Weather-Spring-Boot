@@ -1,4 +1,4 @@
-package com.api.weather.Weather.controller;
+package com.api.weather.Weather.config; // PACOTE CORRIGIDO
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,8 +12,11 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://weather-spring-boot.vercel.app")
-                        .allowedMethods("GET","POST","PUT","DELETE","OPTIONS");
+                        .allowedOrigins("https://weather-spring-boot-2q6y.vercel.app") // USE A URL EXATA DO SEU FRONTEND VERIFIED
+                        .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+                        .allowCredentials(true) // Adicione esta linha
+                        // .allowedHeaders("*"); // Opcional: comente temporariamente ou seja específico
+                        .maxAge(3600); // Mantenha esta linha para requests pre-flight
             }
         };
     }
