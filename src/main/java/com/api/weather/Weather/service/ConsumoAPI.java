@@ -10,9 +10,6 @@ import java.net.http.HttpResponse;
 
 public class ConsumoAPI {
 
-    @Value("${API_KEY_WEATHER}")
-    private String apiKey;
-
     public String consumirApi(String nome){
 		String url = "https://api.openweathermap.org/data/2.5/weather?q="+nome+"&appid="+"70e846a32a19f922a9d17b0d8b4b2f17";
         HttpClient client = HttpClient.newHttpClient();

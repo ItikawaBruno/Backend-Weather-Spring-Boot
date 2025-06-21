@@ -12,7 +12,7 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://weather-spring-boot-2q6y.vercel.app") // USE A URL EXATA DO SEU FRONTEND VERIFIED
+                        .allowedOrigins("https://weather-spring-boot.vercel.app") // USE A URL EXATA DO SEU FRONTEND VERIFIED
                         .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
                         .allowCredentials(true) // Adicione esta linha
                         // .allowedHeaders("*"); // Opcional: comente temporariamente ou seja específico
