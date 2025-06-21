@@ -26,9 +26,9 @@ public class Controller {
     }
 
 
-//    @GetMapping("/test")
-//    public String test(){
-//        return "Está funcionando";
-//    }
+    @GetMapping("/test")
+    public String test(){
+        return "Está funcionando";
+    }
 
 }
