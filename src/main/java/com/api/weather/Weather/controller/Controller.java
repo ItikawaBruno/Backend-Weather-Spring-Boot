@@ -15,7 +15,6 @@ import java.nio.charset.StandardCharsets;
 
 @RestController
 @RequestMapping("/tempo")
-@CrossOrigin(origins = "*")
 public class Controller {
 
     private Service service = new Service();
