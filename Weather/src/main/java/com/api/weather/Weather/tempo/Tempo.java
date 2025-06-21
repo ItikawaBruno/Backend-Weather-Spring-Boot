@@ -1,12 +1,6 @@
 package com.api.weather.Weather.tempo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
-@Entity(name = "tempo")
 public class Tempo {
 
     private String descricao;
@@ -24,8 +18,7 @@ public class Tempo {
         this.humidade = humidade;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
 
