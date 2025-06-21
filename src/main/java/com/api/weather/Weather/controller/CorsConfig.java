@@ -1,4 +1,4 @@
-package com.api.weather.Weather.config; // PACOTE CORRIGIDO
+package com.api.weather.Weather.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
